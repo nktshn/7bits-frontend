@@ -1,0 +1,330 @@
+                                /*pseudo:*/
+
+a:visited {
+    text-decoration: none; 
+} 
+a:active {
+    text-decoration: none; 
+}
+a:link { 
+    text-decoration: none;   
+}
+
+                                /*Default: */
+
+body {
+    background-color: #f7f9fc;
+}
+header {
+    display: flex;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 1148px;
+    margin: auto;
+}
+nav {
+    width: 392px;
+    margin-left: auto;
+    margin-right: 131px;
+}
+
+
+                                /*Classes: */
+
+.logo {
+    float: left; 
+    margin-left: 98px;
+}
+.logo__link {
+    font-family: LatoBoldItalic;
+    font-size: 42px;
+    color: #333333;
+    
+}
+.nav__list {     
+    display: inline;
+    text-align: center;
+    font-family: LatoBold;
+    font-size: 16px;
+    color: #333333;
+    margin-left: 27px;
+    text-transform: uppercase;
+}
+.nav__list: last-child {
+    margin-right: 0;
+}
+.nav__menu {
+    position: relative;
+    padding-top: 55px;
+}
+.nav__search {
+    position: absolute;
+    bottom: 1px;
+    right: -31px;
+}
+.content {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 951px;
+    margin: auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
+    margin-bottom: 50px;
+}
+.post__idotravel {
+    position: absolute;
+    right: -12px;
+    top: 20px;
+    border: 0;
+    height: 32px;
+    background-color: #5c6bc0;
+    font-family: LatoBold;
+    font-size: 14px;  
+}
+.post__data {
+    font-family: LatoBold;
+    font-size: 14px;
+    padding-top: 59px;
+    color: #bdbdbd;
+}
+.post__title {
+    line-height: 50px;
+    font-family: LatoBold;
+    font-size: 40px;
+
+}
+.post {
+    display: inline-block;
+    margin-left: 97px;
+    margin-right: 97px;
+}
+.post__text {
+    line-height: 30px;
+    margin-top: 40px;
+    font-family: LatoRegular;
+    font-size: 17px;
+    color: #585858;
+}
+.post__hr {
+    color: #eeeeee;
+    background-color: #eeeeee;
+    border: none;
+    height: 2px;
+}
+
+.post__readmore {
+    margin-top: 56px;
+    font-family: LatoBold; 
+    font-size: 21px;
+    color: #5c6bc0;
+    float: left;
+   
+}
+.mntn {
+    background: url(../images/mntn.jpg) no-repeat center;
+    background-position: bottom;
+    width: 951px;
+    height: 528px;
+    margin: auto;
+    box-shadow: 0 -10px 50px rgba(0,0,0,0.15);
+    
+}
+.post__quote {
+    font-family: LatoItalic;
+    font-size: 25px;
+    line-height: 38px;
+    color: #a3a3a3;
+}
+.post__quote-little {
+    font-family: LatoRegulat;
+    font-size: 20px;
+    color: #b8b8b8;
+    line-height: 30px;
+    margin-left: 26px;
+}
+.post__hashtags {
+    float: right;
+    display: inline;
+    margin-bottom: 81px;
+    margin-top: 56px;
+
+}
+.post__hashtag {
+    display: inline;
+    color: #cacaca;
+    font-family: LatoRegular; 
+    font-size: 15px;
+}
+.post__monument {
+    margin-top: 30px;
+    margin-right: 27px;
+    margin-bottom: 30px;
+}
+.post__link {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: white;
+}
+.post__linkinpost {
+    color: #5c6bc0;
+    font-family: LatoBold;
+    text-decoration: underline;
+}
+
+.footer {
+    height: 529px;
+    background-color: #5c6bc0;
+    margin-top: 150px;
+}
+.myfooter {
+    padding-top: 1px;
+    width: 756px;
+    margin: auto;
+}
+.footer__link {
+    font-family: LatoBoldItalic;
+    font-size: 36px;
+    color: #4f5ca6;
+    text-align: center;
+    margin-top: 68px;
+}
+.footer__menu {
+    position: relative;
+    padding-top: 20px;
+    margin-left: 154px;
+}
+.footer__list {     
+    display: inline;
+    text-align: center;
+    font-family: LatoBold;
+    font-size: 16px;
+    color: white;
+    margin-left: 27px;
+    text-transform: uppercase;
+}
+.footer-nav {
+    margin: auto;
+}
+.footer__search {
+    position: absolute;
+    bottom: 1px;
+    margin-left: 30px;
+}
+.footer__hr {
+    margin-top: 40px;
+    color: #5765b5;
+    background-color: #5765b5;
+    border: none;
+    height: 2px;
+}
+.footer__info {
+    font-family: LatoRegular;
+    font-size: 13px;
+    line-height: 23px;
+    color: #a9afdb;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer__comp-link {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: white;
+}
+.icons {
+    margin: auto;
+}
+.icons__menu {
+    margin-top: 40px;
+    text-align: center;
+}
+.icons__links {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.post__submit-btn {
+    background-color: white;
+    border: none;
+    border-color: white;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    margin-top: 56px;
+    margin-bottom: 90px;
+    width: 170px;
+    height: 40px;
+}
+.submit-btn {
+    font-family: LatoBold; 
+    font-size: 21px;
+    color: #5c6bc0;
+}
+.contact-form__inputs {
+    border: none;
+    margin-bottom: 30px;
+    background-color: #f7f9fc;
+    font-family: LatoRegular;
+    font-size: 20px;
+    color: dimgrey;
+    padding-left: 28px;
+    
+}
+.contact-form__inputs::-webkit-input-placeholder {         
+    color: #cacbcd;
+}
+.contact-form__name {
+    height: 54px;
+    width: 360px;
+    
+}
+.contact-form__email {
+    height: 54px;
+    width: 360px;
+    float: right;
+    
+}
+.contact-form__subject {
+    height: 54px;
+    width: 756px;
+}
+.contact-form__message {
+    padding-top: 10px;
+    height: 150px;
+    width: 756px;
+}
+.contact-us-hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #eeeeee;
+    background-color: #eeeeee;
+    border: none;
+    height: 2px;
+}
+.nav__current-page {
+    color: #cacbcd;
+}
+.footer__current-page {
+    color: #a9afdb;
+}
+                                /*FONTS*/
+
+
+@font-face {
+    font-family: LatoBoldItalic; 
+    src: url(../fonts/Lato-BoldItalic.ttf); 
+}
+@font-face {
+    font-family: LatoItalic; 
+    src: url(../fonts/Lato-Italic.ttf); 
+}
+
+@font-face {
+    font-family: LatoBold; 
+    src: url(../fonts/Lato-Bold.ttf); 
+}
+@font-face {
+    font-family: LatoRegular; 
+    src: url(../fonts/Lato-Regular.ttf); 
+}
+
