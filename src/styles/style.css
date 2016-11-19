@@ -37,6 +37,8 @@ nav {
                                 /*Classes: */
 
 .logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
     float: left; 
     margin-left: 98px;
 }
@@ -54,7 +56,26 @@ nav {
     color: #333333;
     margin-left: 27px;
     text-transform: uppercase;
+    
 }
+
+.nav__link {
+    
+}
+
+.nav__list a: after {
+    display: block; 
+    content: ""; 
+    height: 3px; 
+    width: 0%; 
+    background-color: #5c6bc0; 
+    transition: width 0.7s ease-in-out; 
+} 
+.nav__list a:hover:after, 
+.nav__list a:focus:after { 
+    width: 100%; 
+}
+
 .nav__list: last-child {
     margin-right: 0;
 }
@@ -68,16 +89,21 @@ nav {
     right: -31px;
 }
 .content {
+    display: table;
     background-color: #FFFFFF;
-    position: relative;
     width: 951px;
     margin: auto;
     box-shadow: 0 0 50px rgba(0,0,0,0.15);
     margin-bottom: 50px;
 }
+.post {
+    position: relative;
+    margin-left: 97px;
+    margin-right: 97px;
+}
 .post__idotravel {
     position: absolute;
-    right: -12px;
+    right: -111px;
     top: 20px;
     border: 0;
     height: 32px;
@@ -97,11 +123,7 @@ nav {
     font-size: 40px;
 
 }
-.post {
-    display: inline-block;
-    margin-left: 97px;
-    margin-right: 97px;
-}
+
 .post__text {
     line-height: 30px;
     margin-top: 40px;
@@ -268,6 +290,7 @@ nav {
     font-size: 20px;
     color: dimgrey;
     padding-left: 28px;
+    padding-right: 28px;
     
 }
 .contact-form__inputs::-webkit-input-placeholder {         
@@ -275,23 +298,23 @@ nav {
 }
 .contact-form__name {
     height: 54px;
-    width: 360px;
+    width: 304px;
     
 }
 .contact-form__email {
     height: 54px;
-    width: 360px;
+    width: 304px;
     float: right;
     
 }
 .contact-form__subject {
     height: 54px;
-    width: 756px;
+    width: 702px;
 }
 .contact-form__message {
     padding-top: 10px;
     height: 150px;
-    width: 756px;
+    width: 702px;
 }
 .contact-us-hr {
     margin-top: 40px;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +8,12 @@
 </head>
 <body>
     <main>
-        <header>
-            <div class="logo">
-                <a href="index.html"><p class="logo__link">Palo Alto</p></a>
-            </div>
-            <nav >
-                <ul class="nav__menu">
-                    <a href="index.html" class="nav__link"><li class="nav__current-page nav__list">Home</li></a>
-                    <a href="#" class="nav__link"><li class="nav__list">About</li></a>
-                    <a href="#" class="nav__link"><li class="nav__list">Archive</li></a>
-                    <a href="contact.html" class="nav__link"><li class="nav__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search.png" alt="search" class="nav__search"></a>                   
-                </ul>
-            </nav>
-        </header>
+            {% include "header.html" %}
         <section class="content">
            <section class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Travel</a></button>
                 <p class="post__data">Sep 20</p>
-                <p class="post__title">No difference how many peaks you reach if there was no pleasure in the climb.</p>
+                <h2 class="post__title">No difference how many peaks you reach if there was no pleasure in the climb.</h2>
                 <hr class="post__hr">
                 <p class="post__text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
                 <a href="#"><p class="post__readmore">READ MORE</p></a>
@@ -36,14 +24,15 @@
                 </ul>
             </section>
         </section>
-        <section class="mntn">
-<!--        image is here       -->
-        </section>
+
         <section class="content">
+            <section class="mntn">
+    <!--        image is here       -->
+            </section>
            <section class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Observe</a></button>
                 <p class="post__data">Sep 18</p>
-                <p class="post__title">You know, I'd rather argue with you, then laugh with anyone else.</p>
+                <h2 class="post__title">You know, I'd rather argue with you, then laugh with anyone else.</h2>
                 <hr class="post__hr">
                 <p class="post__quote">Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae. </p>
                 <p class="post__text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
@@ -60,7 +49,7 @@
            <section class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Reflect</a></button>
                 <p class="post__data">Sep 11</p>
-                <p class="post__title">Democracy means simply the bludgeoning of the people by the people for the people.</p>
+                <h2 class="post__title">Democracy means simply the bludgeoning of the people by the people for the people.</h2>
                 <hr class="post__hr">
                 <img src="../images/monument.jpg" alt="monument" align="left" class="post__monument">
                 <p class="post__text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
@@ -76,32 +65,6 @@
             </section>
         </section>
     </main>
-    <div class="footer">
-        <div class="myfooter">
-            <a href="index.html"><p class="footer__link" >Palo Alto</p></a>
-            <div class="footer-nav">
-                <ul class="footer__menu">
-                    <a href="index.html" class="nav__link"><li class="footer__current-page footer__list">Home</li></a>
-                    <a href="#" class="nav__link"><li class="footer__list">About</li></a>
-                    <a href="#" class="nav__link"><li class="footer__list">Archive</li></a>
-                    <a href="contact.html" class="nav__link"><li class="footer__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search-white.png" alt="search" class="footer__search"></a>                   
-                </ul>
-            </div>
-            <hr class="footer__hr">
-            <p class="footer__info">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
-            <hr class="footer__hr">
-            <p class="footer__info">© 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="#" class="footer__comp-link">PixelBuddha Team</a></p>
-            <div class="icons">
-               <ul class="icons__menu">
-                    <a href="#" class="icons__links"><img src="../images/facebook.png" alt=""facebook></a>
-                    <a href="#" class="icons__links"><img src="../images/twitter.png" alt=""twitter></a>
-                    <a href="#" class="icons__links"><img src="../images/instagram.png" alt=""instagram></a>
-                    <a href="#" class="icons__links"><img src="../images/pinterest.png" alt=""pinterest></a>              
-            </ul>
-                
-            </div>
-        </div>
-    </div>
+    {% include "footer.html" %}
 </body>
 </html>

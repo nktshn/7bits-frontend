@@ -7,23 +7,9 @@
 </head>
 <body>
     <main>
-        <header>
-            <div class="logo">
-                <a href="index.html"><p class="logo__link">Palo Alto</p></a>
-            </div>
-            <nav >
-                <ul class="nav__menu">
-                    <a href="index.html" class="nav__link"><li class="nav__list">Home</li></a>
-                    <a href="#" class="nav__link"><li class="nav__list">About</li></a>
-                    <a href="#" class="nav__link"><li class="nav__list">Archive</li></a>
-                    <a href="#" class="nav__link"><li class="nav__current-page nav__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search.png" alt="search" class="nav__search"></a>                   
-                </ul>
-            </nav>
-        </header>
+        {% include "header.html" %}
         <section class="content">
            <section class="post">
-            
                 <p class="post__data"></p>
                 <p class="post__title">Contact us</p>
                 <p class="post__text">Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non. Integer at dui a lacus suscipit elementum id non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.</p>
@@ -33,36 +19,12 @@
                     <input type="text" class="contact-form__email contact-form__inputs" name="email" placeholder="E-Mail">
                     <input type="text" class="contact-form__subject contact-form__inputs" name="subject" placeholder="Subject">
                     <textarea class="contact-form__message contact-form__inputs" name="message" placeholder="Message" cols="40" rows="5"></textarea>
+                    <button type="submit" class="post__submit-btn submit-btn">SEND MESSAGE</button>
                 </form>
-                <button type="button" class="post__submit-btn"><a href="#" class="submit-btn">SEND MESSAGE</a></button>
+                
             </section>
         </section>
     </main>
-    <div class="footer">
-        <div class="myfooter">
-            <a href="index.html"><p class="footer__link" >Palo Alto</p></a>
-            <div class="footer-nav">
-                <ul class="footer__menu">
-                    <a href="index.html" class="nav__link"><li class="footer__list">Home</li></a>
-                    <a href="#" class="nav__link"><li class="footer__list">About</li></a>
-                    <a href="#" class="nav__link"><li class="footer__list">Archive</li></a>
-                    <a href="contact.html" class="nav__link"><li class="footer__current-page footer__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search-white.png" alt="search" class="footer__search"></a>                   
-                </ul>
-            </div>
-            <hr class="footer__hr">
-            <p class="footer__info">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
-            <hr class="footer__hr">
-            <p class="footer__info">© 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="#" class="footer__comp-link">PixelBuddha Team</a></p>
-            <div class="icons">
-               <ul class="icons__menu">
-                    <a href="#" class="icons__links"><img src="../images/facebook.png" alt=""facebook></a>
-                    <a href="#" class="icons__links"><img src="../images/twitter.png" alt=""twitter></a>
-                    <a href="#" class="icons__links"><img src="../images/instagram.png" alt=""instagram></a>
-                    <a href="#" class="icons__links"><img src="../images/pinterest.png" alt=""pinterest></a>  
-                
-            </div>
-        </div>
-    </div>
+   {% include "footer.html" %}
 </body>
 </html>
