@@ -1,4 +1,38 @@
-<div class="footer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="7bits, Омск">
+    <meta name="description" content="7bits courses 2016-2017">
+    <title>7bits frontend</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" sizes="32x32"/>
+<!--    <link href='../vendor/css/normalize.css' rel="stylesheet">-->
+    <link href='../styles/style.css' rel="stylesheet">
+</head>
+<body>
+      
+      
+       <header>
+            <div class="logo">
+           <a href="index.html"><img src="../images/logo.png" alt="Palo Alto"></a>
+            </div>
+            <nav >
+                <ul class="nav__menu">
+                    <a href="index.html" class="nav__link"><li class="nav__list">Home</li></a>
+                    <a href="#" class="nav__link"><li class="nav__list">About</li></a>
+                    <a href="#" class="nav__link"><li class="nav__list">Archive</li></a>
+                    <a href="contact.html" class="nav__link"><li class="nav__list">Contact</li></a>
+                    <a href="#" ><img src="../images/search.png" alt="search" class="nav__search"></a>                   
+                </ul>
+            </nav>
+        </header>
+        
+        
+        {% block main %}
+        {% endblock %}
+        
+        
+        <div class="footer">
         <div class="myfooter">
             <a href="index.html"><p class="footer__link">Palo Alto</p></a>
             <div class="footer-nav">
@@ -25,3 +59,7 @@
             </div>
         </div>
     </div>
+    
+    
+</body>
+</html>

@@ -1,16 +1,9 @@
+{% extends "layout.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link href='../styles/style.css' rel="stylesheet">
-</head>
-<body>
-    <main>
-            {% include "header.html" %}
+{% block main %}
+        <main>
         <section class="content">
-           <section class="post">
+           <article class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Travel</a></button>
                 <p class="post__data">Sep 20</p>
                 <h2 class="post__title">No difference how many peaks you reach if there was no pleasure in the climb.</h2>
@@ -22,14 +15,14 @@
                     <a href="#"><li class="post__hashtag">#Peak</li></a>
                     <a href="#"><li class="post__hashtag">#Explorer</li></a>                  
                 </ul>
-            </section>
+            </article>
         </section>
 
         <section class="content">
             <section class="mntn">
     <!--        image is here       -->
             </section>
-           <section class="post">
+           <article class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Observe</a></button>
                 <p class="post__data">Sep 18</p>
                 <h2 class="post__title">You know, I'd rather argue with you, then laugh with anyone else.</h2>
@@ -43,10 +36,10 @@
                     <a href="#"><li class="post__hashtag">#Peak</li></a>
                     <a href="#"><li class="post__hashtag">#Photo</li></a>                  
                 </ul>
-            </section>
+            </article>
         </section>
         <section class="content">
-           <section class="post">
+           <article class="post">
             <button type="button" class="post__idotravel"><a href="#" class="post__link">I Do Reflect</a></button>
                 <p class="post__data">Sep 11</p>
                 <h2 class="post__title">Democracy means simply the bludgeoning of the people by the people for the people.</h2>
@@ -62,9 +55,7 @@
                     <a href="#"><li class="post__hashtag">#Peak</li></a>
                     <a href="#"><li class="post__hashtag">#Photo</li></a>                  
                 </ul>
-            </section>
+            </article>
         </section>
     </main>
-    {% include "footer.html" %}
-</body>
-</html>
+    {% endblock %}

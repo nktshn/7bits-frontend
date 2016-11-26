@@ -1,7 +1,7 @@
 {
   "name": "7bits-frontend-rep",
   "version": "1.0.0",
-  "description": "",
+  "description": "lalala",
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.18.1",
@@ -17,6 +17,8 @@
     "gulp-util": "^3.0.7"
   },
   "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssmin": "^0.1.7",
     "gulp-nunjucks": "^2.3.0"
   },
   "scripts": {

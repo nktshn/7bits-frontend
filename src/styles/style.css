@@ -1,4 +1,4 @@
-                                /*pseudo:*/
+ /*pseudo:*/
 
 a:visited {
     text-decoration: none; 
@@ -16,6 +16,8 @@ body {
     background-color: #f7f9fc;
 }
 header {
+    margin-left: 61px;
+    margin-right: 61px;
     display: flex;
 }
 ul, ol {
@@ -59,22 +61,6 @@ nav {
     
 }
 
-.nav__link {
-    
-}
-
-.nav__list a: after {
-    display: block; 
-    content: ""; 
-    height: 3px; 
-    width: 0%; 
-    background-color: #5c6bc0; 
-    transition: width 0.7s ease-in-out; 
-} 
-.nav__list a:hover:after, 
-.nav__list a:focus:after { 
-    width: 100%; 
-}
 
 .nav__list: last-child {
     margin-right: 0;
@@ -350,4 +336,3 @@ nav {
     font-family: LatoRegular; 
     src: url(../fonts/Lato-Regular.ttf); 
 }
-
