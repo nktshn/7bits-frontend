@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="7bits, Омск">
     <meta name="description" content="7bits courses 2016-2017">
-    <title>7bits frontend</title>
-    <link rel="shortcut icon" href="../images/favicon.ico" sizes="32x32"/>
-<!--    <link href='../vendor/css/normalize.css' rel="stylesheet">-->
-    <link href='../styles/style.css' rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}
+    {% endblock %}
+    <link rel="shortcut icon" href="./images/favicon.ico" sizes="32x32"/>
+    <link href='./vendor/css/normalize.css' rel="stylesheet">
+    <link href='./styles/style.css' rel="stylesheet">
 </head>
 <body>
       
       
        <header>
             <div class="logo">
-           <a href="index.html"><img src="../images/logo.png" alt="Palo Alto"></a>
+           <a href="index.html"><img src="./images/logo.png" alt="Palo Alto"></a>
             </div>
-            <nav >
+            <div class="mobile-nav">
+                <img src="./images/burger.png" alt="Navigation">
+            </div>
+            <nav>
                 <ul class="nav__menu">
                     <a href="index.html" class="nav__link"><li class="nav__list">Home</li></a>
                     <a href="#" class="nav__link"><li class="nav__list">About</li></a>
                     <a href="#" class="nav__link"><li class="nav__list">Archive</li></a>
                     <a href="contact.html" class="nav__link"><li class="nav__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search.png" alt="search" class="nav__search"></a>                   
+                    <a href="#" ><img src="./images/search.png" alt="search" class="nav__search"></a>                   
                 </ul>
             </nav>
         </header>
@@ -41,19 +46,19 @@
                     <a href="#" class="nav__link"><li class="footer__list">About</li></a>
                     <a href="#" class="nav__link"><li class="footer__list">Archive</li></a>
                     <a href="contact.html" class="nav__link"><li class="footer__list">Contact</li></a>
-                    <a href="#" ><img src="../images/search-white.png" alt="search" class="footer__search"></a>                   
+                    <a href="#" ><img src="./images/search-white.png" alt="search" class="footer__search"></a>                   
                 </ul>
             </div>
             <hr class="footer__hr">
             <p class="footer__info">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
             <hr class="footer__hr">
-            <p class="footer__info">© 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="#" class="footer__comp-link">PixelBuddha Team</a></p>
-            <div class="icons">
+            <p class="footer__info">© 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <p class="footer__team"><a href="#" class="footer__comp-link">PixelBuddha Team</a></p>
+            <div class="icons"></p>
                 <ul class="icons__menu">
-                    <a href="#" class="icons__links"><img src="../images/facebook.png" alt=""facebook></a>
-                    <a href="#" class="icons__links"><img src="../images/twitter.png" alt=""twitter></a>
-                    <a href="#" class="icons__links"><img src="../images/instagram.png" alt=""instagram></a>
-                    <a href="#" class="icons__links"><img src="../images/pinterest.png" alt=""pinterest></a>              
+                    <a href="#" class="icons__links"><img src="./images/facebook.png" alt=""facebook></a>
+                    <a href="#" class="icons__links"><img src="./images/twitter.png" alt=""twitter></a>
+                    <a href="#" class="icons__links"><img src="./images/instagram.png" alt=""instagram></a>
+                    <a href="#" class="icons__links"><img src="./images/pinterest.png" alt=""pinterest></a>              
                 </ul>
                 
             </div>

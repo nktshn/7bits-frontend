@@ -11,15 +11,13 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var path = {
     css:  'src/styles/*.css',
-    vendor: {
-      css: 'src/vendor/css/*.css'
-    },
+    vendor: 'src/vendor/css/*.css',
     html: 'src/templates/*.html',
     ttf:  'src/fonts/*.ttf',
     img:  'src/images/*.*',
     dist: {
       css:  'dist/styles/',
-        vendor: 'dist/vendor/',
+      vendor: 'dist/vendor/',
       html: 'dist/',
       ttf: 'dist/fonts/',
       img: 'dist/images/',
@@ -49,14 +47,14 @@ gulp.task('css-min', function () {
 });
 
 gulp.task('vendor-css', function () {
-  return gulp.src(path.vendor.css)
+  return gulp.src(path.vendor)
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest(path.dist.vendor));
 });
 
 gulp.task('vendor-css-min', function () {
-  return gulp.src(path.vendor.css)
-    .pipe(concat('vendor.css'))
+  return gulp.src(path.vendor)
+    .pipe(concat('vendor-css-min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest(path.dist.vendor));
 });
@@ -76,8 +74,8 @@ gulp.task('img', function () {
     .pipe(gulp.dest(path.dist.img));
 });
 
-gulp.task('build', ['html', 'css', 'img', 'vendor-css']);
-gulp.task('prod', ['html', 'css-min', 'img', 'vendor-css-min']);
+gulp.task('build', ['html', 'css', 'img', 'vendor-css', 'ttf']);
+gulp.task('prod', ['html', 'css-min', 'img', 'vendor-css-min', 'ttf']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
