@@ -9,7 +9,7 @@ $(document).ready(function() {
 	
 	$.getJSON( "./mock/article.json", function(data) {
 		for (item in data.articles) {
-					nunjucks.render('./article.html', data.articles[item], function (err, res) {
+					nunjucks.render('./partials/article.html', data.articles[item], function (err, res) {
           			$('.js-articles').append(res);
         		});
       	}
